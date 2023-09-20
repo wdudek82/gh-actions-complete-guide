@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: First Wor
+
+# Controls when the workflow will run
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print greeting
+        run: echo Hello, World!
+
+      - name: Format
+        run: npm run format
+
+      - name: Print goodbye
+        run: echo Bye!
