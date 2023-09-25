@@ -14,11 +14,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      - name: Install angular-cli globally
+        run: npm install -g @angular/cli@~16.2.2
+
       - name: Install npm dependencies
         run: npm ci
-
-      - name: Install angular-cli
-        run: npm install @angular/cli@~16.2.2
 
       - name: Check code formatting
         run: npm run format
