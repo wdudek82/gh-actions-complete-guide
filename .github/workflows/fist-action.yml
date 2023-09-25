@@ -22,11 +22,5 @@ jobs:
       - name: Print greeting
         run: echo Hello, World!
 
-      - name: Install npm dependencies
-        run: npm ci
-
-      - name: Format code
-        run: npm run format:write
-
       - name: Print goodbye
         run: echo Bye!
