@@ -17,6 +17,9 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Install angular-cli
+        run: npm install @angular/cli@~16.2.2
+
       - name: Check code formatting
         run: npm run format
 
